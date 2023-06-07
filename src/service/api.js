@@ -1,8 +1,8 @@
 import axios from 'axios';
-const URL = 'https://news-api-g0c0.onrender.com/';
+const URL = 'https://api-news-fbwj.onrender.com/';
 export const getNews = async () => {
     try {
-        return await axios.get(URL)
+        return await axios.get(`${URL}/news`);
     } catch (error) {
         console.log('Error while calling get news api', error);
     }
